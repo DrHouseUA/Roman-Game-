@@ -29,12 +29,9 @@ namespace Roman_Game_
                 symb[i] = Line;
             };
 
-            for (int i = 0; i < consHeight * consWidth; i++)
-            {
-                Console.Write(symb[i]);
-            }
 
-            Graphics.DrawChart(consWidth);
+
+            Graphics.DrawChart(consWidth,consHeight);
             Console.ReadKey();
 
         }
