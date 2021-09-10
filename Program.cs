@@ -35,7 +35,7 @@ namespace Roman_Game_
 
             ObjPos objPos = new ();
             objPos.GetPos(Console.GetCursorPosition().Left,Console.GetCursorPosition().Top);
-            //Console.WriteLine($"{Graphics.ObjPos.x} '+'  {Graphics.ObjPos.y}"); для понимания позиции
+            //'x'Console.WriteLine($"{Graphics.ObjPos.x} " + y"  {Graphics.ObjPos.y}"); для понимания позиции
 
             Console.ReadKey();
             
