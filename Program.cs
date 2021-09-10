@@ -33,7 +33,8 @@ namespace Roman_Game_
 
             Graphics.DrawChart(consWidth,consHeight);
 
-            ObjPos.GetPos(Console.GetCursorPosition().Left,Console.GetCursorPosition().Top);
+            ObjPos objPos = new ();
+            objPos.GetPos(Console.GetCursorPosition().Left,Console.GetCursorPosition().Top);
             //Console.WriteLine($"{Graphics.ObjPos.x} '+'  {Graphics.ObjPos.y}"); для понимания позиции
 
             Console.ReadKey();
