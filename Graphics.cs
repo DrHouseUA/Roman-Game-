@@ -68,26 +68,5 @@ namespace Roman_Game_
             Console.BackgroundColor = colNum;
         }
 
-        public struct ObjPos 
-        { 
-            public static int posX;
-            public static int posY;
-            
-
-            public static void GetPos(int x,int y)
-            {
-                posX = x;
-                posY = y;
-            }
-            
-        }
-
-        public enum TypeOfLand : byte
-        {
-            water,
-            ground,
-            rock,
-            sand            
-        }
     }
 }
