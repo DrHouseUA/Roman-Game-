@@ -7,13 +7,16 @@ namespace Roman_Game_
 {
     class Program
     {
+        public static int borderX = 120;
+        public static int borderY = 30;
 
         static void Main(string[] args)
         {
+
             int consWidth = 120;
             int consHeight = 30;
             char Line = ' ';
-           
+            
 
             Console.Title = "Game";
             Console.SetWindowSize(consWidth, consHeight);
@@ -42,15 +45,6 @@ namespace Roman_Game_
             
 
         }
-
-        
-        
-
-
-            
-            
-
-
     }
 }
 
