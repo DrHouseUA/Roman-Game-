@@ -45,7 +45,7 @@ namespace Roman_Game_
                     objPos.y = y+1;
                     return objPos;
                 case 5:
-                    objPos.x = x+1;
+                    objPos.x = x-1;
                     objPos.y = y+1;
                     return objPos;
                 case 6:
