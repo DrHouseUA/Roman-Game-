@@ -82,7 +82,7 @@ namespace Roman_Game_
             
         }
 
-        public enum TypeOfLand 
+        public enum TypeOfLand : byte
         {
             water,
             ground,
