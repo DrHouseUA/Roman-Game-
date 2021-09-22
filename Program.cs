@@ -7,10 +7,8 @@ namespace Roman_Game_
 {
     class Program
     {
-        public static int borderX = 120;
-        public static int borderY = 30;
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
 
             int consWidth = 120;
@@ -21,8 +19,9 @@ namespace Roman_Game_
             Console.Title = "Game";
             Console.SetWindowSize(consWidth, consHeight);
             Console.SetBufferSize(consWidth, consHeight);
+            ObjPos.width = Console.BufferWidth - 2;
+            ObjPos.height = Console.BufferHeight - 2;
             Console.CursorVisible = false;
-
 
 
             char[] symb = new char[consWidth * consHeight];
@@ -32,17 +31,15 @@ namespace Roman_Game_
                 symb[i] = Line;
             };
 
-
-
             Graphics.DrawChart(consWidth,consHeight);
 
-            ObjPos objPos = new ();
+            ObjPos objPos = new();
             objPos.x = Console.GetCursorPosition().Left;
-            objPos.y=Console.GetCursorPosition().Top;
-            //'x'Console.WriteLine($"{Graphics.ObjPos.x} " + y"  {Graphics.ObjPos.y}"); для понимания позиции
+            objPos.y = Console.GetCursorPosition().Top;
+
+            TypeOfFire missle1 = new(3, 3, "5");
 
             Console.ReadKey();
-            
 
         }
     }

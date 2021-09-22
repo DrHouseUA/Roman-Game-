@@ -10,7 +10,8 @@ namespace Roman_Game_
     {
         public int x;
         public int y;
-
+        public static int width;
+        public static int height;
 
         public ObjPos(int x, int y)
         {
@@ -67,7 +68,7 @@ namespace Roman_Game_
         {
             bool status = false;
 
-            if (objPos.x < 1 || objPos.x > (Program.borderX - 1) || objPos.y < 1 || objPos.y >(Program.borderY-1)) 
+            if (objPos.x < 0 || objPos.x > width || objPos.y < 0 || objPos.y > height) 
             {
                 status = true;
             }
